@@ -1,0 +1,14 @@
+ec2_nodes:
+  hosts:
+    node1:
+      ansible_host: 98.81.160.226
+      ansible_port: 22
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: /home/aaru/elk.pem
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+    node2:
+      ansible_host: 54.174.97.44
+      ansible_port: 22
+      ansible_user: ubuntu
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+      ansible_ssh_private_key_file: /home/aaru/elk.pem
